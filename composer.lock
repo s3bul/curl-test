@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/s3bul/curl.git",
-                "reference": "cbf99795ac1bf52fb0c5220ebf67f7a73c9f9333"
+                "reference": "3167a55366127a2d6851b80b70161119e7a5c1b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/s3bul/curl/zipball/cbf99795ac1bf52fb0c5220ebf67f7a73c9f9333",
-                "reference": "cbf99795ac1bf52fb0c5220ebf67f7a73c9f9333",
+                "url": "https://api.github.com/repos/s3bul/curl/zipball/3167a55366127a2d6851b80b70161119e7a5c1b0",
+                "reference": "3167a55366127a2d6851b80b70161119e7a5c1b0",
                 "shasum": ""
             },
             "require": {
@@ -32,8 +32,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "S3bul\\": "src/",
-                    "Tests\\": "tests/"
+                    "S3bul\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -56,7 +55,7 @@
                 "issues": "https://github.com/s3bul/curl/issues",
                 "source": "https://github.com/s3bul/curl/tree/feature/new-major-release"
             },
-            "time": "2023-01-06T23:00:07+00:00"
+            "time": "2023-01-06T23:44:51+00:00"
         }
     ],
     "packages-dev": [],
