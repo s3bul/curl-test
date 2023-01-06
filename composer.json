@@ -1,0 +1,23 @@
+{
+  "name": "s3bul/curl-test",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "sebastian",
+      "email": "email@example.com"
+    }
+  ],
+  "config": {
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "S3bul\\": "src/"
+    }
+  },
+  "require": {
+    "s3bul/curl": "dev-feature/new-major-release"
+  }
+}
