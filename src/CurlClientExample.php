@@ -4,6 +4,7 @@ declare(strict_types=1);
 namespace S3bul;
 
 use S3bul\Client\CurlClient;
+use S3bul\Exception\CurlExecException;
 
 class CurlClientExample
 {
@@ -22,10 +23,19 @@ class CurlClientExample
             ->get()
             ->getResponse();
 
+        try {
+            $error = $curl->init('https://gore222st.co.in/public/v2/users')
+                ->get()
+                ->getResponse();
+        } catch (CurlExecException $exception) {
+            $error = $exception->getMessage();
+        }
+
         return [
             'filtered' => $filtered,
             'users' => $users,
             'user' => json_decode($user),
+            'error' => $error,
         ];
     }
 
