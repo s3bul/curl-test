@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/s3bul/curl.git",
-                "reference": "73aa130ea0ca94e92f4e10653a0ba30b6faeeb01"
+                "reference": "739d900f15df48b1d41cbfdccd5d34c5d9735817"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/s3bul/curl/zipball/73aa130ea0ca94e92f4e10653a0ba30b6faeeb01",
-                "reference": "73aa130ea0ca94e92f4e10653a0ba30b6faeeb01",
+                "url": "https://api.github.com/repos/s3bul/curl/zipball/739d900f15df48b1d41cbfdccd5d34c5d9735817",
+                "reference": "739d900f15df48b1d41cbfdccd5d34c5d9735817",
                 "shasum": ""
             },
             "require": {
@@ -55,7 +55,7 @@
                 "issues": "https://github.com/s3bul/curl/issues",
                 "source": "https://github.com/s3bul/curl/tree/feature/new-major-release"
             },
-            "time": "2023-01-07T14:22:12+00:00"
+            "time": "2023-01-07T14:28:48+00:00"
         }
     ],
     "packages-dev": [],
