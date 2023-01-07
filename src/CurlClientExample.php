@@ -7,12 +7,21 @@ use S3bul\Client\CurlClient;
 
 class CurlClientExample
 {
-    public function getUsers(): string
+    public function getUsers(): array
     {
         $curl = new CurlClient();
-        return $curl->init('https://gorest.co.in/public/v2/users')
+        $users = $curl->init('https://gorest.co.in/public/v2/users')
             ->get()
             ->getResponse();
+
+        $user = $curl->init('https://gorest.co.in/public/v2/users/269')
+            ->get()
+            ->getResponse();
+
+        return [
+            'users' => $users,
+            'user' => json_decode($user),
+        ];
     }
 
 }
