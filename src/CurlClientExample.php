@@ -10,7 +10,11 @@ class CurlClientExample
     public function getUsers(): array
     {
         $curl = new CurlClient();
-        $users = $curl->init('https://gorest.co.in/public/v2/users')
+        $filtered = $curl->init('https://gorest.co.in/public/v2/users')
+            ->get(['id' => 269])
+            ->getResponse();
+
+        $users = $curl->init()
             ->get()
             ->getResponse();
 
@@ -19,6 +23,7 @@ class CurlClientExample
             ->getResponse();
 
         return [
+            'filtered' => $filtered,
             'users' => $users,
             'user' => json_decode($user),
         ];
