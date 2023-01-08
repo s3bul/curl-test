@@ -18,6 +18,8 @@
     }
   },
   "require": {
-    "s3bul/curl": "dev-feature/new-major-release"
+    "ext-curl": "*",
+    "s3bul/curl": "dev-feature/new-major-release",
+    "s3bul/curl-psr7": "^0.1.0"
   }
 }
