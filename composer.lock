@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1d59f6d3823d74917e9c7e2c535a56dc",
+    "content-hash": "152653dda9c4066ac25f2e36eade9a7d",
     "packages": [
         {
             "name": "guzzlehttp/psr7",
@@ -330,16 +330,16 @@
         },
         {
             "name": "s3bul/curl-psr7",
-            "version": "0.1.0",
+            "version": "0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/s3bul/curl-psr7.git",
-                "reference": "c051e80b895da208feb62a9c67a2ae8beb331ed1"
+                "reference": "974ad3d8c76742daa5a0ba0d3b6e5d66ad970dfa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/s3bul/curl-psr7/zipball/c051e80b895da208feb62a9c67a2ae8beb331ed1",
-                "reference": "c051e80b895da208feb62a9c67a2ae8beb331ed1",
+                "url": "https://api.github.com/repos/s3bul/curl-psr7/zipball/974ad3d8c76742daa5a0ba0d3b6e5d66ad970dfa",
+                "reference": "974ad3d8c76742daa5a0ba0d3b6e5d66ad970dfa",
                 "shasum": ""
             },
             "require": {
@@ -350,7 +350,8 @@
             "require-dev": {
                 "codeception/codeception": "^5.0",
                 "codeception/module-asserts": "*",
-                "codeception/module-phpbrowser": "*"
+                "codeception/module-phpbrowser": "*",
+                "phpstan/phpstan": "^1.9"
             },
             "type": "library",
             "autoload": {
@@ -377,9 +378,9 @@
             ],
             "support": {
                 "issues": "https://github.com/s3bul/curl-psr7/issues",
-                "source": "https://github.com/s3bul/curl-psr7/tree/v0.1.0"
+                "source": "https://github.com/s3bul/curl-psr7/tree/v0.2.0"
             },
-            "time": "2023-01-08T15:36:24+00:00"
+            "time": "2023-01-09T16:14:05+00:00"
         }
     ],
     "packages-dev": [],

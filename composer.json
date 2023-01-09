@@ -20,6 +20,6 @@
   "require": {
     "ext-curl": "*",
     "s3bul/curl": "dev-feature/new-major-release",
-    "s3bul/curl-psr7": "^0.1.0"
+    "s3bul/curl-psr7": "^0.2.0"
   }
 }

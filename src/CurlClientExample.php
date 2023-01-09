@@ -4,9 +4,8 @@ declare(strict_types=1);
 namespace S3bul;
 
 use S3bul\Client\CurlClient as CurlClientOld;
-use S3bul\CurlPsr7\Client\CurlClient;
 use S3bul\CurlPsr7\Exception\CurlExecException;
-use S3bul\CurlPsr7\Factory\RequestFactory;
+use S3bul\CurlPsr7\Factory\CurlFactory;
 use S3bul\Exception\CurlExecException as CurlExecExceptionOld;
 
 class CurlClientExample
@@ -15,24 +14,20 @@ class CurlClientExample
 
     public function getUsers(): array
     {
-        $request = RequestFactory::get(self::SERVICE_URI, [
+        $curl = CurlFactory::get(self::SERVICE_URI, [
             'page' => 1,
             'per_page' => 1,
         ]);
-        $curl = new CurlClient($request);
         $filtered = $curl->exec();
 
-        $request = RequestFactory::get(self::SERVICE_URI);
-        $curl = new CurlClient($request);
+        $curl = CurlFactory::get(self::SERVICE_URI);
         $users = $curl->exec();
 
-        $request = RequestFactory::get(self::SERVICE_URI . '/272');
-        $curl = new CurlClient($request);
+        $curl = CurlFactory::get(self::SERVICE_URI . '/272');
         $user = $curl->exec();
 
         try {
-            $request = RequestFactory::get('https://gore222st.co.in/public/v2/users');
-            $curl = new CurlClient($request);
+            $curl = CurlFactory::get('https://gore222st.co.in/public/v2/users');
             $error = $curl->exec();
         } catch (CurlExecException $exception) {
             $error = $exception->getMessage();
